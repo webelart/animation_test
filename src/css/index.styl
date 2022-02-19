@@ -1,0 +1,127 @@
+body,
+html {
+    font: 16px/1.4 Arial, sans-serif;
+    padding: 1em;
+    padding-left: 100px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.firstAnim {
+    width: 100px;
+    height: 100px;
+    background: #4e7ba8;
+}
+  
+.firstAnimStart {
+    animation-name: firstAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+@keyframes firstAnim {
+    0% {
+        background: #2196f3;
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    20% {
+        background: #4caf50;
+        transform: translate3d(100px, 0, 0) scale(1.2);
+    }
+    40% {
+        background: #ffeb3b;
+        transform: translate3d(150px, 0, 0) scale(2);
+    }
+    60% {
+        background: #ff9800;
+        transform: translate3d(200px, 0, 0) scale(1.5);
+    }
+    80% {
+        background: #e91e63;
+        transform: translate3d(300px, 0, 0) scale(1);
+    }
+    100% {
+        background: #9c27b0;
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+}
+
+.secondAnim {
+    width: 100px;
+    height: 100px;
+    background: #4e7ba8;
+}
+
+.secondAnimStart {
+    animation-name: secondAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes secondAnim {
+    0% {
+        background: #2196f3;
+        width: 100px;
+        height: 100px;
+    }
+    20% {
+        background: #4caf50;
+        width: 120px;
+        height: 120px;
+        margin-left: 100px;
+    }
+    40% {
+        background: #ffeb3b;
+        width: 200px;
+        height: 200px;
+        margin-left: 150px;
+    }
+    60% {
+        background: #ff9800;
+        width: 150px;
+        height: 150px;
+        margin-left: 200px;
+    }
+    80% {
+        background: #e91e63;
+        width: 120px;
+        height: 120px;
+        margin-left: 300px;
+    }
+    100% {
+        background: #9c27b0;
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+}
+
+.thirdAnim {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #4e7ba8;
+}
+
+.forthAnim {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #4e7ba8;
+}
