@@ -62,7 +62,7 @@ function startAnim(buttonNode, elemNode, startClass) {
             forthAnimNode.isStarted = false;
             buttonForthAnimNode.innerText = 'Запустить анимацию';
             posX = 0;
-            forthAnimNode.style.transform = `translate3d(${posX}px, 0, 0)`;
+            forthAnimNode.style.marginLeft = `${posX}px`;
             cancelAnimationFrame(animId);
         } else {
             forthAnimNode.isStarted = true;
@@ -74,7 +74,7 @@ function startAnim(buttonNode, elemNode, startClass) {
 
     function startAnim() {
         posX += posXStep;
-        forthAnimNode.style.transform = `translate3d(${posX}px, 0, 0)`;
+        forthAnimNode.style.marginLeft = `${posX}px`;
         animId = requestAnimationFrame(startAnim);
     }
 } ());   
